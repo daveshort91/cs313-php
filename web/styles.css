@@ -1,3 +1,27 @@
-div {
+#title {
     text-align: center;
+}
+
+div {
+  display: inline-block;
+}
+
+div:hover {
+  font-weight: bold;
+}
+
+#first {
+  background-color: #0000ff;
+  font-size: 18;
+
+}
+
+#second {
+  background-color: #009900;
+  font-size:30;
+}
+
+#third {
+  background-color: #cc0000;
+  font-size: 64;
 }
