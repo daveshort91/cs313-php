@@ -6,7 +6,20 @@ div {
   display: inline-block;
 }
 
-div:hover {
+.container {
+  /* width: 100px;
+  height: 100px;
+  background-color: red; */
+
+  position: absolute;
+
+  left: 20%;
+  right: 20%;
+
+  margin: auto;
+}
+
+div.panel-heading:hover {
   font-weight: bold;
 }
 
