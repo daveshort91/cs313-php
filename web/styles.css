@@ -13,7 +13,7 @@ div {
 
   position: absolute;
 
-  left: 20%;
+  left: 50%;
   right: 20%;
 
   margin: auto;
@@ -25,16 +25,16 @@ div.panel-heading:hover {
 
 #first {
   background-color: #0000ff;
-  font-size: 18;
+  font-size: 18px;
 
 }
 
 #second {
   background-color: #009900;
-  font-size:30;
+  font-size: 30px;
 }
 
 #third {
   background-color: #cc0000;
-  font-size: 64;
+  font-size: 64px;
 }

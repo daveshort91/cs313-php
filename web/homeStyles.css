@@ -1,0 +1,65 @@
+
+
+h1 {
+  top: 10%;
+  left: 40%;
+  right: 40%
+
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+}
+
+body {
+   background: url("images/pixel_background.gif") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bio {
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  width: 400px;
+  height: 75px;
+  position: absolute;
+  margin: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+table {
+  max-width: 200px;
+  width: 100% !important;
+  background-color: gray;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  width: 100px;
+  height: 75px;
+  position: absolute;
+  margin: auto;
+}
+
+a {
+  color: black;
+}
