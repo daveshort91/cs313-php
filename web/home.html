@@ -6,9 +6,12 @@
   <script type="text/javascript" src="js/team01.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <title>Homepage</title>
 </head>
 <body>
+
+
   <div class="topnav">
     <a href="home.html">Home</a>
     <a href="assignments.html">Assignments</a>
@@ -28,5 +31,11 @@
   <p class="quote">"My common sense is tingling." - Deadpool</p>
 </div>
 
+
+<?php
+$t=time();
+echo($t . "<br>");
+echo(date("Y-m-d",$t));
+?>
 </body>
 </html>
