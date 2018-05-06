@@ -34,7 +34,6 @@
 <footer>
 <?php
 $t=time();
-echo($t);
 echo(date("Y-m-d",$t));
 ?>
 </footer>
