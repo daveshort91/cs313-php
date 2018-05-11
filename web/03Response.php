@@ -13,10 +13,12 @@
 
 		echo '</br><div>Continents Visited:</div>';
 
-		if (isset($_POST['continent'])){
-			echo $_POST['continent']; // Displays value of checked checkbox.
+		// if (isset($_POST['continent'])){
+		// 	echo $_POST['continent']; // Displays value of checked checkbox.
+		// }
+		foreach($_POST['continent'] as $selected){
+			echo $selected."</br>";
 		}
-
 		echo '</br>';
 //	}
 
