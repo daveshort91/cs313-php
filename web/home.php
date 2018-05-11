@@ -13,7 +13,7 @@
 
 
   <div class="topnav">
-    <a href="home.html">Home</a>
+    <a href="home.php">Home</a>
     <a href="assignments.html">Assignments</a>
   </div>
   <div id="title">
