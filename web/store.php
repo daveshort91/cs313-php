@@ -12,8 +12,8 @@
 </head>
 <body>
   <?php
-  $items = array("Dagger" => "2", "Hook hand" => "10", "Light Mace" => "5",
-  "Longspear" => "5", "Light Crossbow" => "35");
+  // $items = array("Dagger" => "2", "Hook hand" => "10", "Light Mace" => "5",
+  // "Longspear" => "5", "Light Crossbow" => "35");
 
    ?>
   <div class="topnav">
@@ -28,12 +28,12 @@
         <th>Price</th>
       </tr>
       <?php
-      foreach ($items as $key => $value) {
-        echo "<tr>";
-        echo "<td>" . $key . "</td>";
-        echo "<td>" . $value . "gp </td>"
-        echo '<button type="button">Add</button>'
-        echo "</tr>"
+      // foreach ($items as $key => $value) {
+      //   echo "<tr>";
+      //   echo "<td>" . $key . "</td>";
+      //   echo "<td>" . $value . "gp </td>"
+      //   echo '<button type="button">Add</button>'
+      //   echo "</tr>"
       }
        ?>
     </table>
