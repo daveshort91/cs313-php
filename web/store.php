@@ -31,9 +31,9 @@
      foreach ($items as $key => $value) {
        echo "<tr>";
        echo "<td>" . $key . "</td>";
-       echo "<td>" . $value . "gp </td>"
+       echo "<td>" . $value . "gp </td>";
        echo '<button type="button">Add</button>';
-       echo "</tr>"
+       echo "</tr>";
      }
       ?>
    </table>
