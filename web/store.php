@@ -1,8 +1,4 @@
-<?php
-$items = array("Dagger" => "2", "Hook hand" => "10", "Light Mace" => "5",
-"Longspear" => "5", "Light Crossbow" => "35");
 
- ?>
 
 <!DOCTYPE html>
 <html>
@@ -15,6 +11,11 @@ $items = array("Dagger" => "2", "Hook hand" => "10", "Light Mace" => "5",
   <title>Store</title>
 </head>
 <body>
+  <?php
+  $items = array("Dagger" => "2", "Hook hand" => "10", "Light Mace" => "5",
+  "Longspear" => "5", "Light Crossbow" => "35");
+
+   ?>
   <div class="topnav">
     <a href="home.html">Home</a>
     <a href="assignments.html">Assignments</a>
