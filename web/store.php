@@ -22,7 +22,13 @@
     <a href="cart.php">Your Cart</a>
   </div>
   <div>
-
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Price</th>
+      </tr>
+    
+   </table>
   </div>
 
 
