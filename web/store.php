@@ -26,6 +26,7 @@
       <tr>
         <th>Item</th>
         <th>Price</th>
+        <th></th>
       </tr>
       <?php
      foreach ($items as $key => $value) {
