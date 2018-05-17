@@ -1,5 +1,8 @@
 
-
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,12 +33,23 @@
       <?php
      foreach ($items as $key => $value) {
        echo "<tr>";
-       echo "<td>" . $key . "</td>";
-       echo "<td>" . $value . "gp </td>";
-       echo '<td><button type="button">Add</button><td>';
+       echo "<form class='add-to-cart-form'>";
+       echo "<div class='item-id'>" . $key . "</div>"
+       echo "<button type='submit'>Add</button>"
        echo "</tr>";
      }
       ?>
+      <script>
+          $(document).ready(function(){
+            $('.add-to-cart-form').on('submit', function(){
+
+                var id = $(this).find('.product-id').text();
+
+                window.location.href = "add_to_cart.php?id=" + id;
+                return false;
+            });
+          });
+      </script>
    </table>
   </div>
 
