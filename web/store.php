@@ -33,11 +33,11 @@ session_start();
       <?php
      foreach ($items as $key => $value) {
        echo "<tr>";
-       echo "<td>"
+       echo "<td>";
        echo "<form class='add-to-cart-form'>";
        echo "<div class='item-id'>" . $key . "</div>";
        echo "<button type='submit'>Add</button>";
-       echo "</td>"
+       echo "</td>";
        echo "</tr>";
      }
       ?>
