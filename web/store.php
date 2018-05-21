@@ -38,6 +38,9 @@ session_start();
        echo "<div class='item-id'>" . $key . "</div>";
        echo "<button type='submit'>Add</button>";
        echo "</td>";
+       echo "<td>";
+       echo $value;
+       echo "</td>";
        echo "</tr>";
      }
       ?>
