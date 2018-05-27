@@ -35,12 +35,12 @@ session_start();
        echo "<tr>";
        echo "<td>";
        echo "<form class='add-to-cart-form'>";
-       echo "<div class='item-id'>" . $key . "</div>";
+       echo "<div class='item-id'>" . $key . "        " . "" . "</div>";
        echo "<button type='submit'>Add</button>";
        echo "</td>";
-       echo "<td>";
-       echo $value;
-       echo "</td>";
+       // echo "<td>";
+       // echo $value;
+       // echo "</td>";
        echo "</tr>";
      }
       ?>
