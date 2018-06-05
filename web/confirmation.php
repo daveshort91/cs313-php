@@ -5,15 +5,11 @@
   <link rel="stylesheet" href="homeStyles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <title>New Entry</title>
+  <title>Confirmation</title>
 </head>
 <body>
 
-<form action="addEntry.php" method="post">
-  <input type="file" name="fileToUpload" id="fileToUpload"><br>
-  <input type="text">Title</input><br>
-  <input type="submit" value="Submit Entry">
-</form>
+<h1>Thank You For Your Submission!</h1>
 
 
 

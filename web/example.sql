@@ -1,5 +1,29 @@
-CREATE TABLE scripturesToTopics (
-  id int primary key,
-  scripture_id int references scriptures(id),
-  topic_id int references topics(id) 
-)
+CREATE TABLE names (
+  id SERIAL PRIMARY KEY NOT NULL,
+  first_name VARCHAR(30) NOT NULL,
+  last_name VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE emails (
+  id SERIAL PRIMARY KEY NOT NULL,
+  email VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE user_types (
+  id SERIAL PRIMARY KEY NOT NULL,
+  type VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY NOT NULL,
+  name_id INT NOT NULL REFERENCES names(id),
+  email_id INT NOT NULL REFERENCES emails(id),
+  user_type_id INT NOT NULL REFERENCES user_types(id)
+);
+
+CREATE TABLE entries (
+  id SERIAL PRIMARY KEY NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  image BYTEA NOT NULL,
+  user_id INT NOT NULL REFERENCES users(id)
+);
