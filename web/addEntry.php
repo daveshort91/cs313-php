@@ -15,7 +15,7 @@ try
 	$statement = $db->prepare($query);
 
   $statement->bindValue(':title', $title);
-	$statement->bindValue(':image', $image);
+	$statement->bindValue(':image', $entry);
 	$statement->bindValue(':email', $email);
 
   $statement->execute();
