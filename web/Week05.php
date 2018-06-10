@@ -33,8 +33,8 @@ $statement->execute();
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
     echo '<tr>';
-    echo '<td>' . $row['n.first_name'] . ' ' . $row['n.last_name'] . '</td>';
-    echo '<td>' . $row['e.email'] . '</td>';
+    echo '<td>' . $row['first_name'] . ' ' . $row['last_name'] . '</td>';
+    echo '<td>' . $row['email'] . '</td>';
     echo '</tr>';
 }
 
