@@ -27,3 +27,25 @@ CREATE TABLE entries (
   image BYTEA NOT NULL,
   user_id INT NOT NULL REFERENCES users(id)
 );
+
+
+INSERT INTO names (first_name, last_name) VALUES
+('Harry', 'Potter'),
+('Ron', 'Weasley'),
+('Hermione', 'Granger');
+
+INSERT INTO user_types (type) values
+('Judge'),
+('Contestant');
+
+INSERT INTO emails (email) VALUES
+('hpotter@hogwarts.edu'),
+('rweasley@hogwarts.edu'),
+('hgranger@hogwarts.edu');
+
+INSERT INTO users (name_id, email_id, user_type_id) VALUES
+((SELECT id FROM names WHERE first_name = 'Harry'), (SELECT id FROM emails WHERE email = 'hpotter@hogwarts.edu'), (SELECT id FROM user_types WHERE type = 'Contestant')),
+((SELECT id FROM names WHERE first_name = 'Ron'), (SELECT id FROM emails WHERE email = 'rweasley@hogwarts.edu'), (SELECT id FROM user_types WHERE type = 'Contestant')),
+((SELECT id FROM names WHERE first_name = 'Hermione'),(SELECT id FROM emails WHERE email = 'hgranger@hogwarts.edu'), (SELECT id FROM user_types WHERE type = 'Contestant'));
+
+SELECT n.first_name, n.last_name, e.email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id;
