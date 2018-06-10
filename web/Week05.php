@@ -24,13 +24,13 @@
 
 <?php
 
-$statement = $db->prepare("SELECT n.first_name, n.last_name, e.email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id");
-$statement->execute();
-
-while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-{
-
-}
+// $statement = $db->prepare("SELECT n.first_name, n.last_name, e.email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id");
+// $statement->execute();
+//
+// while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+// {
+//
+// }
 
 
  ?>
