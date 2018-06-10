@@ -15,6 +15,9 @@
   		$dbPassword = $dbopts["ac510fc22c734d804f00cd3d140cd581169d8afdc2a92e8d4838b9c26817e35d"];
   		$dbName = ltrim($dbopts["ddablnlhhmt81l"],'/');
 
+      $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+
       $db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     }
     catch (PDOException $ex) {

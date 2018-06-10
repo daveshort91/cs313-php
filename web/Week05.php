@@ -1,6 +1,6 @@
 <?php
-  // require "connectdb.php";
-  // $db = get_db();
+  require "connectdb.php";
+  $db = get_db();
 
  ?>
 
