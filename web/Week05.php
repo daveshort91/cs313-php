@@ -19,18 +19,24 @@
 
   <div>
     <table>
-      <th>Name</th>
-      <th>Email</th>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+
 
 <?php
 
-// $statement = $db->prepare("SELECT n.first_name, n.last_name, e.email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id");
-// $statement->execute();
-//
-// while ($row = $statement->fetch(PDO::FETCH_ASSOC))
-// {
-//
-// }
+$statement = $db->prepare("SELECT n.first_name, n.last_name, e.email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id");
+$statement->execute();
+
+while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+{
+    echo '<tr>';
+    echo '<td>' . $row['n.first_name'] . ' ' . $row['n.last_name'] . '</td>';
+    echo '<td>' . $row['e.email'] . '</td>';
+    echo '</tr>';
+}
 
 
  ?>
