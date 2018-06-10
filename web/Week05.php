@@ -27,13 +27,13 @@
 
 <?php
 
-$statement = $db->prepare("SELECT n.first_name first, n.last_name first, e.email email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id");
+$statement = $db->prepare("SELECT n.first_name AS first, n.last_name AS last, e.email AS email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id");
 $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
     echo '<tr>';
-    echo '<td>' . $row['first_name'] . ' ' . $row['last_name'] . '</td>';
+    echo '<td>' . $row['first'] . ' ' . $row['last'] . '</td>';
     echo '<td>' . $row['email'] . '</td>';
     echo '</tr>';
 }
