@@ -10,8 +10,9 @@
 <body>
 
 <form action="addEntry.php" method="post">
+  <input type="text" name="email" id="email"><br>
   <input type="file" name="fileToUpload" id="fileToUpload"><br>
-  <input type="text">Title</input><br>
+  <input type="text" name="title" id="title">Title</input><br>
   <input type="submit" value="Submit Entry">
 </form>
 

@@ -49,3 +49,5 @@ INSERT INTO users (name_id, email_id, user_type_id) VALUES
 ((SELECT id FROM names WHERE first_name = 'Hermione'),(SELECT id FROM emails WHERE email = 'hgranger@hogwarts.edu'), (SELECT id FROM user_types WHERE type = 'Contestant'));
 
 SELECT n.first_name, n.last_name, e.email FROM names n INNER JOIN users u ON u.name_id = n.id INNER JOIN emails e ON u.email_id = e.id;
+
+SELECT u.id FROM users u INNER JOIN emails e ON u.email_id = e.id WHERE e.email = 'hpotter@hogwarts.edu';
