@@ -31,7 +31,7 @@ $statement->execute();
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
     // header('Content-type: image/jpeg');
-    echo '<img src="data:image/jpg;base64,' . $row['image']) . '">';
+    echo '<img src="data:image/jpg;base64,' . pg_unescape_bytea($row['image']) . '">';
     // echo pg_unescape_bytea($row['image']);
 
 }
