@@ -11,7 +11,7 @@
 <body>
   <div class="topnav">
     <a href="home.php">Home</a>
-    <a href="assignments.html">Assignments</a>
+    <a href="assignments.php">Assignments</a>
   </div>
   <div>
     <h1 class="well well-md">Assignments</h1>
