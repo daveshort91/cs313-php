@@ -8,7 +8,10 @@
   <title>New Entry</title>
 </head>
 <body>
-
+<?php
+  require 'navbar.php';
+  
+?>
 <form action="addEntry.php" method="post">
   <input type="text" name="email" id="email"><br>
   <input type="file" name="fileToUpload" id="fileToUpload"><br>
