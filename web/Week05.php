@@ -14,7 +14,10 @@
   <title>Entries</title>
 </head>
 <body>
+  <?php
+    require 'navbar.php';
 
+  ?>
   <h1>Contestants</h1><br>
 
   <div>

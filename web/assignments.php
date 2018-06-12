@@ -9,10 +9,10 @@
   <title>Assignments</title>
 </head>
 <body>
-  <div class="topnav">
-    <a href="home.php">Home</a>
-    <a href="assignments.php">Assignments</a>
-  </div>
+  <?php
+    require 'navbar.php';
+
+  ?>
   <div>
     <h1 class="well well-md">Assignments</h1>
   </div>
