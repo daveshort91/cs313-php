@@ -30,7 +30,7 @@ $statement->execute();
 
 while ($row = $statement->fetch(PDO::FETCH_ASSOC))
 {
-    header('Content-type: image/jpeg');
+    div('Content-type: image/jpeg');
     echo pg_unescape_bytea($row['image']);
     
 }
